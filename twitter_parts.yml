@@ -1,0 +1,35 @@
+#twitter_parts 用初期設定ファイル author:Making CGI(kanayan)
+
+URL: http://xxxx.jp/twitter_parts.rb
+
+Title: Twitter Parts
+
+#CSSのURL
+CSS: http://xxxx.jp/css/twitter_parts.css
+
+#JSのURL
+JS: http://xxxx.jp/js/twitter_parts.js
+
+#prototype.jsのURL
+prototype: http://xxxx.jp/js/prototype.js
+
+#scroll.jsのURL
+scroll: http://xxxx.jp/js/scroll.js
+
+#Twitter のID
+ID: xxxx
+
+#Twitter のPassword
+Passwd: xxxx
+
+#共通header 用 templateファイル
+head_view: ./template/head_view.erb
+
+#共通footer 用 templateファイル
+foot_view: ./template/foot_view.erb
+
+#time_line 用 templateファイル
+time_line_view: ./template/time_line_view.erb
+
+#全ページ 用 templateファイル
+all_view: ./template/all_view.erb

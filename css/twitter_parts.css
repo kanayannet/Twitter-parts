@@ -1,0 +1,186 @@
+body
+{
+	background-color:#1E90FF;
+}
+#title
+{
+	color:#FFFFFF;
+	text-align:center;
+	width: 100%;
+	font-family:Verdana;
+	font-weight:bold;
+	padding-top:5pt;
+	padding-bottom:5pt;
+	margin-left:auto;
+	margin-right:auto;
+}
+#title a:link
+{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#title a:visited
+{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#title a:hover
+{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#all
+{
+	text-align:center;
+}
+#center_line
+{
+	text-align:center;
+	background-color:#FFFFFF;
+	padding-top: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#profile
+{
+	width: 100%;
+	text-align:left;
+	color: #000000;
+}
+
+#profile_image
+{
+	float:left;
+	text-align:left;
+	font-size: 10pt;
+	width:45pt;
+}
+#profile_name
+{
+	width: 94%;
+	text-align: left;
+	padding: 1pt;
+}
+#profile_text
+{
+	font-size: 10pt;
+	line-height:110%;
+}
+
+#profile_clear
+{
+	clear:left;
+	text-align:left;
+	font-size: 10pt;
+}
+
+#page_list
+{
+	width: 100%;
+	text-align:center;
+	font-size: 9pt;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.scrollholder
+{
+	position: relative;
+	width: 100%;
+	height: 145pt;
+	text-align:left;
+	color: #000000;
+	overflow: auto;
+	z-index: 1;
+}
+div.scroll
+{
+    position: absolute;
+    left: 0; top: 0;
+    width: 95%;
+    z-index: 2;
+}
+#image
+{
+	float:left;
+	word-break: break-all;
+	text-align:left;
+	font-size: 10pt;
+	width:45pt;
+}
+
+#text
+{
+	width: 100%;
+	word-break: break-all;
+	font-size: 9pt;
+	text-align: left;
+	line-height:110%;
+}
+#clear
+{
+	clear:left;
+	text-align:left;
+	font-size: 10pt;
+}
+
+#date
+{
+	width: 100%;
+	padding-top:3pt;
+	text-align:center;
+	font-size:8pt;
+}
+#hr_line
+{
+	clear: left;
+}
+
+#foot
+{
+	text-align:center;
+	font-size: 10pt;
+}
+
+/* <Scroll> */
+div.track
+{
+    position: relative;
+    float:right;
+    top: 0; 
+    width: 11px; height: 100%;
+    font-size: 0;
+    z-index: 3;
+    background: #00BFFF;
+}
+
+div.drag_bar
+{
+    position: absolute;
+    width: 100%; height: 14px;
+    cursor: pointer;
+    z-index: 4;
+    background: #0000FF;
+}  
+
+/*共通設定 */
+a:link
+{
+	color:#0000FF;
+	text-decoration:underline;
+}
+a:visited
+{
+	color:#0000FF;
+	text-decoration:underline;
+}
+
+a:hover
+{
+	color:#ff0080;
+	text-decoration:underline;
+}

@@ -1,0 +1,13 @@
+<%= @head %>
+<div id="profile">
+<div id="profile_image">
+<a href="http://twitter.com/<%= profile.screen_name %>" target="_blank"><img src="<%= profile.profile_image_url %>" border="0"></a></div>
+<div id="profile_name"><span id="profile_text"><br><a href="http://twitter.com/<%= profile.screen_name %>" target="_blank"><%= profile.screen_name %></a></span></div>
+<div id="profile_clear"></div>
+<hr size="1" id="hr_line">
+</div>
+<div id="scrollholder" class="scrollholder">
+<div id="scroll" class="scroll">
+</div>
+</div>
+<%= @foot %>

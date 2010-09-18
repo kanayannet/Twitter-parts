@@ -1,0 +1,26 @@
+<div id="page_list">
+<% for i in 1..maxpage %>
+<% link_page = "<a href=\"javascript: twitter_page(#{i - 1});\">#{i}</a>" %>
+<% link_page = "#{i}" if((i - 1) == @cgi['page'].to_i) %>
+<%= link_page %> | 
+<% end %>
+</div>
+<% count = -1 %>
+<% time_line.each do |status| %>
+	<% count = count + 1 %>
+	<% next if(count < start_page) %>
+	<% break if(count >= end_page) %>
+	<div id="image"><a href="http://twitter.com/<%= status.user.screen_name %>"><img src="<%= status.user.profile_image_url %>" border="0"></a><br>
+	<a href="http://twitter.com/<%= status.user.screen_name %>"><%= html_escape(status.user.name.to_s) %></a></div>
+	<div id="text"><%= html_convert(status.text.to_s) %></div>
+	<div id="clear"></div>
+	<div id="date"><%= view_date(status.created_at) %></div>
+	<hr size="1" id="hr_line">
+<% end %>
+<div id="page_list">
+<% for i in 1..maxpage %>
+<% link_page = "<a href=\"javascript: twitter_page(#{i - 1});\">#{i}</a>" %>
+<% link_page = "#{i}" if((i - 1) == @cgi['page'].to_i) %>
+<%= link_page %> | 
+<% end %>
+</div>
